@@ -1,0 +1,23 @@
+{
+   "name": "kabook",
+   "version": "0.0.0",
+   "description": "Examples and recipes for kaboot.",
+   "dependencies": {
+      "kabook": "0.0.1"
+   },
+   "author": "Federico Pereiro <fpereiro@gmail.com>",
+   "contributors": ["Federico Pereiro <fpereiro@gmail.com>"],
+   "license": [{
+      "type": "Public Domain",
+      "url": "http://github.com/fpereiro/kabook#license"
+   }],
+   "keywords": ["deploy", "install", "unix", "task"],
+   "repository" : {
+      "type": "git",
+      "url": "http://github.com/fpereiro/kabook.git"
+   },
+   "bugs": {
+      "url": "http://github.com/fpereiro/kabook/issues",
+      "email": "fpereiro@gmail.com"
+   }
+}
