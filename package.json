@@ -1,9 +1,9 @@
 {
    "name": "kabook",
-   "version": "0.0.0",
+   "version": "0.0.1",
    "description": "Examples and recipes for kaboot.",
    "dependencies": {
-      "kabook": "0.0.1"
+      "kaboot": "0.0.1"
    },
    "author": "Federico Pereiro <fpereiro@gmail.com>",
    "contributors": ["Federico Pereiro <fpereiro@gmail.com>"],
