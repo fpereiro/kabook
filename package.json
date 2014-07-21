@@ -1,9 +1,13 @@
 {
    "name": "kabook",
-   "version": "0.0.1",
+   "version": "0.1.0",
    "description": "Examples and recipes for kaboot.",
    "dependencies": {
-      "kaboot": "0.0.1"
+      "astack": "2.0.4",
+      "dale": "1.1.0",
+      "kaboot": "0.1.0",
+      "kaboots": "0.1.0",
+      "teishi": "1.0.12"
    },
    "author": "Federico Pereiro <fpereiro@gmail.com>",
    "contributors": ["Federico Pereiro <fpereiro@gmail.com>"],

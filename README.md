@@ -1,6 +1,3 @@
 # kabook
 
-Examples and recipes for [kaboot]
-
-- deployment
-- monitoring
+Examples and recipes for [kaboot](https://github.com/fpereiro/kaboot').
