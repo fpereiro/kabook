@@ -1,19 +1,16 @@
-# kabook
+/*
+kabook - v0.9.0
 
-Examples and recipes for [kaboot](https://github.com/fpereiro/kaboot').
+Written by Federico Pereiro (fpereiro@gmail.com) and released into the public domain.
 
-## Examples
+Please run this example by entering `node example` at the command prompt.
+*/
 
-Require kaboot and [kaboots](https://github.com/fpereiro/kaboots')
+(function () {
 
-```javascript
    var k = require ('kaboot');
    k.extend ('kaboots');
-```
 
-Define a function to install node.js on a local or remote machine.
-
-```javascript
    var installNode = function (s, host, key) {
       return ['Install node.js', {host: host, key: key, path: '/tmp'}, [
          ['Download nodejs setup script', k.run, 'wget https://deb.nodesource.com/setup'],
@@ -23,11 +20,7 @@ Define a function to install node.js on a local or remote machine.
          ['Install forever', k.run, 'npm install forever -g']
       ]];
    }
-```
 
-Define a function to deploy a node.js app to a remote repo.
-
-```
    var deploy = function (s, host, key) {
       return ['Deploy app', [
          ['tar the repo', k.unix.tar, {compress: '.', to: '/tmp/app.tar.gz'}],
@@ -43,34 +36,10 @@ Define a function to deploy a node.js app to a remote repo.
          ['remove local tar', k.run, 'rm /tmp/app.tar.gz'],
       ]];
    }
-```
 
-Place the trigger, so that the script can be used like this:
-
-- `node example install HOST_IP KEY`
-- `node example deploy HOST_IP KEY`
-
-(In both cases, the `KEY` is optional).
-
-```
    k.fire ({
       install: ['Install node.js', installNode, '@host', '@key'],
       deploy:  ['Deploy application', deploy, '@host', '@key']
    });
-```
 
-## Installation
-
-`npm install kabook`
-
-Besides core kaboot, this library also depends on [kaboot's standard library](https://github.com/fpereiro/kaboots).
-
-## Intrigued? Here's your hard hat!
-
-Kaboot is undergoing a radical rewrite. While its main concepts and structures are firmly in place, large sections of core functionality are still being worked out.
-
-If you are at all interested by what you've seen so far, I would love to hear your suggestions and requests: my email is fpereiro@gmail.com
-
-## License
-
-Kaboot is written by Federico Pereiro (fpereiro@gmail.com) and released into the public domain.
+}) ();
