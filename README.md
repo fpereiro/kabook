@@ -27,7 +27,7 @@ Define a function to install node.js on a local or remote machine.
 
 Define a function to deploy a node.js app to a remote repo.
 
-```
+```javascript
    var deploy = function (s, host, key) {
       return ['Deploy app', [
          ['tar the repo', k.unix.tar, {compress: '.', to: '/tmp/app.tar.gz'}],
