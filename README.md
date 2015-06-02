@@ -52,7 +52,7 @@ Place the trigger, so that the script can be used like this:
 
 (In both cases, the `KEY` is optional).
 
-```
+```javascript
    k.fire ({
       install: ['Install node.js', installNode, '@host', '@key'],
       deploy:  ['Deploy application', deploy, '@host', '@key']
