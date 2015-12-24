@@ -1,10 +1,10 @@
 # kabook
 
-Examples and recipes for [kaboot](https://github.com/fpereiro/kaboot').
+Examples and recipes for [kaboot](https://github.com/fpereiro/kaboot).
 
 ## Examples
 
-Require kaboot and [kaboots](https://github.com/fpereiro/kaboots')
+Require kaboot and [kaboots](https://github.com/fpereiro/kaboots)
 
 ```javascript
    var k = require ('kaboot');
